@@ -11,7 +11,7 @@ class MoviesRow extends Component {
   componentDidMount = async () => {
     try {
       let response = await fetch(
-        "http://www.omdbapi.com/?apikey=4d0dfb28&s=" + this.props.rowQuery
+        "http://www.omdbapi.com/?apikey=b248648f&s=" + this.props.rowQuery
       );
       let moviesArray = await response.json();
       this.setState({
